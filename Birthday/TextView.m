@@ -111,7 +111,7 @@
 
 - (void)setText:(NSString *)text
 {
-    [_textView setValue:[NSString stringWithFormat:@"<style type='text/css'>h1,h2,h3,h4,p{margin:4px}</style>%@<br />&emsp;",text]
+    [_textView setValue:[NSString stringWithFormat:@"<meta charset=utf-8><style type='text/css'>html,body{color:#fff;font-size:24px;}h1,h2,h3,h4,p{margin:4px;color:#fff;}</style>%@<br />&emsp;",text]
                  forKey:@"ContentToHTMLString"];
     [_textView setNeedsLayout];
 }
